@@ -1,0 +1,21 @@
+<apex:page standardController="Opportunity" recordSetVar="opp">
+  <apex:pageBlock title="Account View">
+    <apex:form id="theForm">
+      <apex:pageBlock >
+        <apex:dataList value="{!opp}" var="a" type="1">
+        
+        <apex:outputField value="{!a.Name}"/>
+        
+        </apex:dataList>
+        <apex:PanelGrid columns="4">
+        <apex:commandLink value="first" action="{!first}"/>
+        <apex:commandLink value="prev" action="{!previous}"/>
+        <apex:commandLink value="next" action="{!next}"/>
+        <apex:commandLink value="last" action="{!last}"/>
+        </apex:PanelGrid>
+    
+      </apex:pageBlock>
+       
+    </apex:form>
+  </apex:pageBlock>
+ </apex:page>

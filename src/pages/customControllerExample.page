@@ -1,0 +1,9 @@
+<apex:page controller="MyCustomeController">
+  <apex:form >
+    <apex:pageBlock >
+      Hi {!$User.FirstName} !!!
+      Your Account name is <apex:inputField value="{!account.Name}"/>
+      <apex:commandButton action="{!saveTheRecord}" value="save"/>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>
