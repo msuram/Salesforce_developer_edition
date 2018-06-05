@@ -1,9 +1,7 @@
 Referenc*
-src/aura/*.xml
-src/triggers/*.xml
-src/aura/*.svg
-src/classes/*.xml
+*.xml
+*.svg
+.settings
+.project
 src/staticresources
-src/pages/*.xml
-src/aura
 salesforce.schema
